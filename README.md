@@ -2,4 +2,6 @@
 - Primeiro Semestre \
   |-- Banco de Dados - Ok \
   |-- Lógica de Programação - Ok \
-  |-- Sistemas Operacionais - Ok \
+  |-- Organização e Arquitetura de Computadores - Ok \
+  |-- Princípios de Segurança da Informação - Em andamento \
+  |-- Sistemas Operacionais - Em andamento
