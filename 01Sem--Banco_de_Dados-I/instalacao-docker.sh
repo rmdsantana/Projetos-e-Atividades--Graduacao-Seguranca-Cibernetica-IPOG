@@ -20,4 +20,4 @@ sudo usermod -aG docker $USER
 newgrp docker
 
 # Subir o docker
-docker compose up -d
+docker-compose up -d
