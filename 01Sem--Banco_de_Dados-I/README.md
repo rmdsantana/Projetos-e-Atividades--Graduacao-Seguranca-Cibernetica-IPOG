@@ -4,4 +4,4 @@
   02. Normalização do modelo
   03. Criação do modelo físico usando MySQL
 
-![Imagem Externa](https://drive.google.com/file/d/1xQQRj6BVwJTNhun7_reYN5SexXCuhlGe/view?usp=sharing)
+![Imagem Externa](https://drive.google.com/u/0/drive-viewer/AKGpihZVu_64EbDzdBc4w1YT962NnwSEuNbEVhTOiwKYBMSAUQpKFpz9F8d9Y_XlklAomA0NsClDwcQ62BtGLdoHIa4eFOaGy6K9O7E=s2560)
