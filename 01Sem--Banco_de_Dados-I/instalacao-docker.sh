@@ -21,8 +21,10 @@ chmod +x script2.sh
 ./script2.sh &
 
 echo "Adicionando o usuário ao grupo 'docker'"
+sleep 1
 sudo usermod -aG docker $USER
 
 # Garantir que o grupo Docker esteja ativo
 echo "Docker Compose iniciará em alguns segundos"
+sleep 2
 newgrp docker
