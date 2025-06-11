@@ -1,0 +1,11 @@
+services:
+  mysql:
+    image: mysql:9.3
+    container_name: mysql_projeto_IPOG_biblioteca
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./Script_SQL_Atividade_Avaliativa_IV:/docker-entrypoint-initdb.d/Script_SQL_Atividade_Avaliativa_IV:ro
