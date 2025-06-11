@@ -2,5 +2,5 @@
 
 #Pós instalação
 #Subir o docker
-sleep 5
+sleep 10
 docker compose up -d
