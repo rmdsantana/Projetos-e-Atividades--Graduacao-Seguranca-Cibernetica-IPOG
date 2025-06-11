@@ -18,5 +18,8 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin d
 #Pós instalação
 sudo usermod -aG docker $USER
 
+# Garantir que o grupo Docker esteja ativo
+newgrp docker
+
 # Subir o docker
 docker compose up -d
