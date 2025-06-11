@@ -18,7 +18,7 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin d
 chmod +x script2.sh
 
 #Rodar script 2
-./script2.sh
+./script2.sh &
 
 echo "Adicionando o usuário ao grupo 'docker'"
 sudo usermod -aG docker $USER
