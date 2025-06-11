@@ -15,16 +15,19 @@ sudo apt update
 
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-chmod +x script2.sh
-
-#Rodar script 2
-./script2.sh &
-
 echo "Adicionando o usuário ao grupo 'docker'"
 sleep 1
 sudo usermod -aG docker $USER
 
 # Garantir que o grupo Docker esteja ativo
+sleep 1
+
+# Garantir que o grupo Docker esteja ativo, usando o 'newgrp' de forma síncrona
+newgrp docker << EOF
 echo "Docker Compose iniciará em alguns segundos"
 sleep 2
+docker compose up -d
+EOF
+
+sleep 1
 newgrp docker
