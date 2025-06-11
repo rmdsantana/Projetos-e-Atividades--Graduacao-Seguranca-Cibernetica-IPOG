@@ -15,13 +15,7 @@ sudo apt update
 
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-#Pós instalação
-sudo usermod -aG docker $USER
-
-# Garantir que o grupo Docker esteja ativo
-newgrp docker
-
-#Rodar script 2
 chmod +x script2.sh
 
+#Rodar script 2
 ./script2.sh
