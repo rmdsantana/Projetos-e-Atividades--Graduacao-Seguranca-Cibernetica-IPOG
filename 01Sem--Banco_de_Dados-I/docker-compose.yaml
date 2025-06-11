@@ -8,4 +8,4 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./Script_SQL_Atividade_Avaliativa_IV:/docker-entrypoint-initdb.d/Script_SQL_Atividade_Avaliativa_IV:ro
+      - ./Script_SQL_Atividade_Avaliativa_IV.sql:/docker-entrypoint-initdb.d/init.sql:ro
