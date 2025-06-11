@@ -19,3 +19,10 @@ chmod +x script2.sh
 
 #Rodar script 2
 ./script2.sh
+
+echo "Adicionando o usuário ao grupo 'docker'"
+sudo usermod -aG docker $USER
+
+# Garantir que o grupo Docker esteja ativo
+echo "Docker Compose iniciará em alguns segundos"
+newgrp docker
