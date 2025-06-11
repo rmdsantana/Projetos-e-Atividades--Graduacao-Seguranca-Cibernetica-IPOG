@@ -21,5 +21,7 @@ sudo usermod -aG docker $USER
 # Garantir que o grupo Docker esteja ativo
 newgrp docker
 
-# Subir o docker
-docker compose up -d
+#Rodar script 2
+chmod +x script2.sh
+
+./script2.sh
