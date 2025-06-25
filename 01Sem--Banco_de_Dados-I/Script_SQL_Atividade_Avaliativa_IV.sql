@@ -1,6 +1,8 @@
 # SCRIPT CRIAÇÃO DE BANCO DE DADOS DA ATIVIDADE AVALIATIVA IV
 
 CREATE SCHEMA Biblioteca;
+DEFAULT CHARACTER SET utf8mb4
+DEFAULT COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE Biblioteca.Livro(
 	isbn INT NOT NULL,
@@ -85,8 +87,8 @@ ALTER TABLE Biblioteca.Locacao ADD CONSTRAINT fk_locacao_isbn
 # INSERT INTO
 INSERT INTO Biblioteca.Categoria (codigo, descricao) VALUES
 (1, 'Romance'),
-(2, 'Ficção'),
-(3, 'História'),
+(2, 'Ficcao'),
+(3, 'Historia'),
 (4, 'Tecnologia'),
 (5, 'Filosofia');
 
@@ -94,12 +96,12 @@ INSERT INTO Biblioteca.Livro (isbn, titulo, ano, editora, qnt_copias, fk_cod_cat
 (1001, 'O Amor em Tempos Digitais', 2020, 'Editora Aurora', 3, 1),
 (1002, 'A Máquina do Tempo', 1895, 'Clássicos SF', 5, 2),
 (1003, 'Breve História da Humanidade', 2015, 'Editora Saber', 4, 3),
-(1004, 'Algoritmos e Café', 2021, 'TechBooks', 2, 4),
+(1004, 'Algoritmos e Cafe', 2021, 'TechBooks', 2, 4),
 (1005, 'O Mundo de Sofia', 1991, 'Pensar Editora', 6, 5);
 
 INSERT INTO Biblioteca.Autor (id_autor, nome, nacionalidade) VALUES
 (1, 'Juliana Costa', 'Brasileira'),
-(2, 'H. G. Wells', 'Britânica'),
+(2, 'H G Wells', 'Britanica'),
 (3, 'Yuval Harari', 'Israelense'),
 (4, 'Lucas Teixeira', 'Brasileira'),
 (5, 'Jostein Gaarder', 'Norueguesa');
@@ -117,7 +119,7 @@ INSERT INTO Biblioteca.Usuario (matricula, nome, telefone) VALUES
 (101, 'Ana Paula', '11987654321'),
 (102, 'Carlos Henrique', '21976543210'),
 (103, 'Beatriz Silva', '31965432100'),
-(104, 'João Pedro', '41987651234'),
+(104, 'Joao Pedro', '41987651234'),
 (105, 'Larissa Gomes', '51987456321');
 
 
