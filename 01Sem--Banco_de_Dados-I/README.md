@@ -12,3 +12,4 @@ O modelo conceitual ficou dessa forma:
 ![Modelo conceitual](https://i.imgur.com/j9sKigc.png)
 
 Ao executar o arquivo "run_script", será realizada a instalação do pacote Docker Engine. Em seguida, um docker-compose será iniciado para realizar o deploy de uma imagem do MySQL. Nessa imagem, será importado um script .sql contendo as informações referente a atividade "03 - Modelo Físico".
+** Obs.: O script de instalação do docker segue os comandos da documentação oficial para a versão do Ubuntu Server.
