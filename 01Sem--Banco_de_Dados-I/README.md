@@ -41,7 +41,8 @@ Para facilitar a execução e replicação do ambiente de banco de dados, este p
     ```
 
     *Obs.: O script de instalação do Docker segue fielmente os comandos da documentação oficial para a versão do Ubuntu Server. Talvez seja necessario alterar as permições do arquivo antes de execulta-lo*
-    ```chmod +x run_script-instalacao-docker.sh
+    ```bash
+    chmod +x run_script-instalacao-docker.sh
     ```
 
 2.  **Acessar o Banco de Dados:**
