@@ -15,7 +15,7 @@ O modelo conceitual desenvolvido para este cenário pode ser visualizado abaixo:
 
 ![Modelo conceitual](https://i.imgur.com/j9sKigc.png)
 
-Para melhor visualização da atividade, criei um passo a passo logo a baixo: 
+Para melhor visualização do modelo físico, criei um passo a passo logo a baixo: 
 
 ## Como Executar o Projeto (Com Docker)
 
