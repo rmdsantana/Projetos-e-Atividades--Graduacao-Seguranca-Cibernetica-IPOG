@@ -14,11 +14,11 @@ Repositório com minhas atividades, projetos e anotações da graduação em Seg
 
 ## Segundo Semestre
 
-| Disciplina                                      | Status         |
-|-------------------------------------------------|----------------|
-| Redes de Computadores                           | 🕓 Em breve    |
-| Administração Linux                             | 🕓 Em breve    |
-| Cloud Computing                                 | 🕓 Em breve    |
-| Políticas de Segurança                          | 🕓 Em breve    |
-| Direito Digital                                 | 🕓 Em breve    |
+| Disciplina                                      | Status          |
+|-------------------------------------------------|-----------------|
+| Redes de Computadores                           | ✅ Concluído    |
+| Políticas de Segurança                          | ✅ Concluído    |
+| Administração Linux                             | 🕓 Em Andamento |
+| Cloud Computing                                 | 🕓 Em Andamento |
+| Direito Digital                                 | 🕓 Em Andamento |
 
