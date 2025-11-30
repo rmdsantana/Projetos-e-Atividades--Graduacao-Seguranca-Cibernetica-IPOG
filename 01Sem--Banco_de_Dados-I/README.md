@@ -37,13 +37,10 @@ Para facilitar a execução e replicação do ambiente de banco de dados, este p
     * Iniciar um contêiner MySQL usando o `docker-compose.yaml`, onde o script SQL (`Script_SQL_Atividade_Avaliativa_IV.sql`) será automaticamente importado para o banco de dados.
 
     ```bash
-    ./run_script-instalacao-docker.sh
+    chmod +x run_script-instalacao-docker.sh && ./run_script-instalacao-docker.sh
     ```
 
-    *Obs.: O script de instalação do Docker segue fielmente os comandos da documentação oficial para a versão do Ubuntu Server. Talvez seja necessario alterar as permições do arquivo antes de execulta-lo*
-    ```bash
-    chmod +x run_script-instalacao-docker.sh
-    ```
+    *Obs.: O script de instalação do Docker segue fielmente os comandos da documentação oficial para a versão do Ubuntu Server.
 
 2.  **Acessar o Banco de Dados:**
     Após a execução do script e a inicialização do contêiner, o servidor MySQL estará disponível na porta `3306` dentro da sua VM. Você pode se conectar utilizando as seguintes credenciais:
@@ -56,6 +53,12 @@ Para facilitar a execução e replicação do ambiente de banco de dados, este p
     ```bash
     docker ps
     ```
+    Para facilitar a visualização do banco sem a necessidade de um Client, como MySQL Workbench ou DBeaver, é possivel acessar diramente o container com o comando abaixo:
+    ```
+    docker exec -it mysql_projeto_IPOG_biblioteca mysql -u root -proot
+    ``` 
+    Dessa forma, é possivel fazer as consultas via CLI de dentro do container.\
+    Ex.: `SELECT * FROM Biblioteca.Livro;`
 
 3.  **Parar e Remover o Contêiner (Opcional):**
     Quando terminar de usar o banco de dados, você pode parar e remover o contêiner com os seguintes comandos no diretório onde o `docker-compose.yaml` está localizado:
